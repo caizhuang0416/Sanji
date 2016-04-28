@@ -46,7 +46,7 @@ public class HTTPPuller  {
                     }
                     continue;
                 }
-                EntityUtils.toString(response.getEntity())
+                EntityUtils.toString(response.getEntity());
                 res = IOUtils.toString(response.getEntity().getContent());
                 break;
             } catch (IOException e) {
